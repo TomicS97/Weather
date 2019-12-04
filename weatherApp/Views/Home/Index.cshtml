@@ -1,0 +1,60 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@section scripts {
+
+
+    <script src="~/Content/Weather/Wether.js"></script>
+
+}
+
+<div class="jumbotron">
+    <h1>WEATHER</h1>
+
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+      
+            <div class="col-md-12">
+                <h3>Insert lat and lan</h3>
+                <div class="form-group">
+                    <label for="lat">Lat</label>
+                    <input type="text" class="form-control" id="lat" placeholder="Enter Lat">
+
+                </div>
+                <div class="form-group">
+                    <label for="lan">Lan</label>
+                    <input type="text" class="form-control" id="lan" placeholder="Enter Lan">
+
+                </div>
+
+                <button id="GetData" type="submit" class="btn btn-primary">Submit</button>
+            </div>
+     
+    </div>
+    <div class="col-md-6">
+
+        <div class="alert alert-success col-md-12" role="alert">
+            <h5>Temperature: </h5><p id="temperature"></p>
+            <h5>Dev Point: </h5><p id="devPoint"></p>
+            <h5>Humidity: </h5><p id="humidity"></p>
+        </div>
+        <div class="col-md-12">
+            <div id="fog" class="col-md-2" style="margin:10px;height:500px; color:white">
+                <h5>Fog: </h5><p id="fogValue"></p>
+            </div>
+            <div id="lowClouds" class="col-md-2" style="margin:10px;height:500px; color:white">
+                <h5>Low Clouds: </h5><p id="lowCloudsValue"></p>
+            </div>
+            <div id="MediumClouds" class="col-md-2" style="margin:10px;height:500px; color:white">
+                <h5>Medium Clouds: </h5><p id="MediumCloudsValue"></p>
+            </div>
+            <div id="HighClouds" class="col-md-2" style="margin:10px;height:500px; color:white">
+                <h5>High Clouds: </h5><p id="HighCloudsValue"></p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
